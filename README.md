@@ -9,7 +9,7 @@ The quantum circuits are evaluated using both the ideal `AerSimulator` and a har
 
 We verify the Kramers-Wannier duality in the sense of Eq. (38) of the paper, which establishes a trace identity between expectations on the domain-wall (dual) lattice and the original Ising lattice:
 
-$$\text{Tr}_{\hat{\mathcal{H}}} \left( \hat{Z}_1 \hat{Z}_2 \mathcal{D}(\rho) \right) = \frac{1}{4} \text{Tr}_{\mathcal{H}} \left( X_1 P \rho \right)$$
+$$\text{Tr}_{\text{DW}} \left( \hat{Z}_1 \hat{Z}_2 \mathcal{D}(\rho) \right) = \frac{1}{4} \text{Tr}_{\text{Ising}} \left( X_1 P \rho \right)$$
 
 Here, the left-hand side (LHS) is computed by preparing a state $\rho$, applying the duality operator $\mathcal{D}$, and measuring $\langle Z_1 Z_2 \rangle$ under charge symmetry projections. The right-hand side (RHS) measures the Ising expectation $\langle X_1 \rangle$ under the projection $P$. The ideal ratio between the two traces (LHS / RHS) is expected to be $\approx 0.25$.
 
@@ -17,7 +17,7 @@ Here, the left-hand side (LHS) is computed by preparing a state $\rho$, applying
 
 ## File Structure & Implementations
 
-The repository contains two distinct implementations of the verification workflow:
+The repository contains the following files:
 
 ### 1. `Verify_KW_duality.ipynb`
 An interactive Jupyter Notebook that serves as a tutorial/walkthrough.
