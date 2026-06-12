@@ -102,4 +102,3 @@ chmod +x script.sh
 ./script.sh
 ```
 This sweeps sizes $n \in \{2, 3, 4, 5\}$ and both backends, saving plots and `.npz` data for all sweeps.
-
